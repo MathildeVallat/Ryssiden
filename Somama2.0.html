@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* sætter størrelsen af boksene, ja størrelsen af boksene, dvs. ingen margener osv. så to bokse kan støde helt op til hinanden. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+  padding: 10px; /* margen omkring tekst */
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+/* sætter h1 i header klassen til fontsize 50px*/
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden; /* tekst bliver ikke vist hvis det går ud over kanten*/
+  background-color: #004080;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: inline-block; /* linkene fylder hele linjen*/
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; /* fjerner understregen på link*/
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns*/
+/* danner en klasse til begge kolonner */
+.row:after {
+  content: "";
+  display: block;
+  clear: both; /* rydder efter begge */
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><img src="Ryslogo.jpg" width="570" height="200" ></img></h1>
+</div>
+
+<div class="topnav">
+  <a href="Somama2.0.html">Hjem</a>
+  <a href="Studieretninger.html">Studieretninger</a>
+  <a href="GCP.html">GCP</a>
+  <a href="QandA.html">Q&A</a>
+  <a href="Vejledning.html">Vejledning</a>
+  <a href="kontaktos.html" style="float:right">Kontakt os</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Nyheder</h2>
+      <h5>VIRTUELT BESØG, Jan 18, 2021</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Kære nye ansøgere sommeren 2021</p>
+      <p>Som følge af Corona-situationen har vi været nødt til at lægge hovedparten af vores orientering ud virtuelt. Det er desværre ikke muligt for os at afholde vores populære besøgsdage på Rysensteen Gymnasium i skoleåret 2020-2021. Vi vil derfor invitere dig til et virtuelt besøg på skolen, hvor du får mulighed for at møde både ledelse, lærere og elever.</p>
+      <p>Besøget foregår gennem den virtuelle platform Zoom og tilmelding sker gennem tilmeldingsformularerne herunder. Kun én tilmelding pr. elev.<p>
+      <p>Et virtuelt besøg på Zoom tager ca 45 minutter og ligger typisk i tidsrummet kl. 15.00 - 15.45.<p>
+      <p>Der er et begrænset antal pladser pr. gang, og kun tilmeldte med et tilsendt link til Zoom kan deltage. Det betyder også, at vi beder dig om at melde afbud til skolen, hvis du bliver forhindret i at deltage, så vi kan tilbyde pladsen til en anden. Vi byder dig velkommen ind i vores virtuelle univers!<p>
+      <a href="https://rysensteen.dk/form/tilmelding-til-besoegsdag-25-jan">Tilmelding</a>
+    </div>
+    <div class="card">
+      <h2>Rysensteen som campus</h2>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Rysensteen Gymnasium er et campus-gymnasium med undervisning på flere forskellige adresser, nemlig</p>
+      <p>- i Hovedbygningen på Tietgensgade 74</p>
+      <p>- i staldene i brune kødby</p>
+      <p>- i DGI-byen<p>
+      <p>- og ikke mindst på Flæsketorvet 60 i Hvide Kødby<p>
+      <p> Afstanden mellem de fleste afdelinger er kun et minuts gang, dog er der 7-8 minutters gang mellem hovedbygningen og Flæsketorvet.<p>
+    </div>
+    <div class="card">
+      <h2>Brev fra Gitte</h2>
+      <h5>Gymnasiestart og 'putte-traditioner'</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Gymnasiestart er traditionelt lig med overskrifter som ”puttefester” og druk. Skal man tro på overskrifterne bliver det simpelthen bare værre og værre. Selvom vi på gymnasierne især gennem de seneste år har arbejdet intenst for at styre gennem gymnasiestarten uden for mange grimme oplevelser for elever, forældre og skoler.  Denne sommer adskiller sig ikke stort fra de forrige. Mediernes overskrifter er nærmest trykt på forhånd! Men – når det er sagt, så er der VIRKELIG også en opgave at løse. Dette blog-indlæg handler om, hvad vi har forsøgt at gøre på Rysensteen i år – og så lige nogle grundlæggende holdninger til fænomenet.</p>
+      <p>På Rysensteen samarbejdede vi gennem mange år med 2.g og 3.g-eleverne for at skabe gode rammer også for de fællesskaber, som eleverne gerne ville give de nye 1.g-elever – et af disse arrangementer var Dyrehaveturen.<p>
+      <p>Men – som mange vil vide har Dyrehavearrangementet især gennem de seneste 5-6 år udviklet sig til en fest for ca. 10.000 unge mennesker med et stærkt fokus alene på druk. Da dette for 4 år siden resulterede i adskillige udpumpninger og en lukning af akutafdelingen på Herlev hospital for andre end Dyrehaveunge, hvoraf nogle var decideret livstruede af alkoholpromiller på helt op til 4,0, valgte vi på Rysensteen Gymnasium at stoppe for opbakningen til at vores elever deltog. Ikke at vi kan forhindre dem i det i deres fritid. Men vi valgte at tilbyde alternativer.<p>
+      <p>I år har vi italesat udfordringerne med sammenblandingen af gymnasiestart og druk endnu kraftigere. Vi har konkret bedt 2. Og 3.g eleverne om at bakke op om det arrangement , som vi lavede for de nye 1.g-elever på fredagen for Dyrehavearrangementet ved IKKE at appellere til, at de boykottede det og i stedet gik med dem ud i Dyrehaven. Det blev respekteret. De 400 1.g-ere havde således et fællesarrangement, hvor de hele eftermiddagen og hen på aftenen sammen  opbyggede relationer til hinanden indenfor skolens egne rammer –  bl.a. med alkoholfri fællesspisning efterfulgt af en kort cafe med mulighed for sammen at nyde  en enkelt øl, hvis det var det, de havde lyst til. En gymnasiestart uden drukfest<p>
+      <p>Alle de 50 introelever inviterede efterfølgende 1.g-eleverne på en skovtur i Dyrehaven ugen efter at alle andre havde været der, og meldingerne herfra er, at det forløb i fuld ro og orden.<p>
+      <p>Skoleåret er begyndt med fællesarrangementer og faglighed hånd i hånd.<p>
+      <p>Men det er ikke alene drukfællesskabet, som vi må til livs. Vi skal også ”putte”-begrebet til livs. Det er ganske enkelt ikke i orden i en tid som denne, hvor bl.a. ”me-too” har fået sat fokus på en manglende ligestilling, at vi accepterer krænkende adfærd overfor nystartede gymnasieelever. Og slet ikke på vores gymnasium, hvor værdierne er Nysgerrighed – Ordentlighed – Rummelighed – Ansvarlighed – forkortet NORA . Dannelse handler også om rummelighed – om fordomsfrit at kunne møde andre mennesker med omsorg og interesse.<p>
+      <p>Det gør man ikke ved at tegne alle nye i hovedet og på tøjet med tusch for SLET ikke at tale om at udsætte nogle af dem for kønskrænkende adfærd gennem udvælgelsesprocesser, der udstiller udseende.<p>
+      <p>Gymnasiestart skal kendetegnes ved at de nye 1.g-elever i trygge rammer lukkes ind i en ny skolekultur og faglighed – med sjov, varme og faglige udfordringer og HELT uden hierarkier, der fjerner åbenhed og tillid.<p>
+      <p>Det bad vi 2. og 3.g-erne om at efterleve, da de kom dagen efter at 1.g-erne var startet. Jeg tror, der blev mukket lidt i krogene. Jeg tror ikke, at det var en helt igennem populær tilgang. Men – det er blevet accepteret. Og jeg tror, at de 1.g-ere der nu er kommet godt i gang her, de næste to år vil medvirke til, at nye årgange af 1.g-elever på Rysensteen Gymnasium vil blive modtaget med åbne arme.<p>
+      <p>Rigtig godt skoleår til alle ryssere på alle årgange<p>
+      <p>Gitte T<p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Rysensteen</h2>
+      <p>Rysensteen Gymnasium er placeret som en campus i hjertet af Vesterbro midt i København. </p>
+        <h1><img src="Hoved.png" width="250" height="200" ></img></h1>
+    </div>
+
+    <div class="card">
+      <h3>Følg Rysensteen</h3>
+      <p><img src="Instalogo.png" width="150"" height="120" ></img></p>
+      <p>@Rysensteengym</p>
+      <p><img src="FBlogo.png" width="120" height="120" ></img></p>
+      <p>@Rysensteen Gymnasium</p>
+      <p><img src="YTlogo.png" width="120" height="120" ></img></p>
+      <p>@Rysensteen Gymnasium</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
